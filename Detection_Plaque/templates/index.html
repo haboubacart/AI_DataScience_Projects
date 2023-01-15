@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <title>AJAX File(s) Upload using Python Flask and jQuery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/app.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="static/js/app.js"></script>
+</head>
+<body >        
+    <h3 id='affichage' style='margin-left:35%; margin-top: 50px;'>Selectionner l'image de la voiture</h3>
+
+     <div class = 'container' >
+        <div>
+            <p><input class="form-control form-control-lg" id="multiFiles" type="file" name="files[]" multiple="multiple"  style="width: 600px; "></p>
+            <p><h4 id="msg"></h4></p>
+            <p><button id="upload" type="button" class="btn btn-success">Detect and read</button></p>
+            
+        </div>
+            
+    </div>
+    <p><img  class = "img" src="static/images/img.PNG"></p>
+
+</body>

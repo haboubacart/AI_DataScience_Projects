@@ -1,0 +1,363 @@
+{
+    "intents": [{
+            "tag": "greeting",
+            "patterns": ["Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day"],
+            "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+            "context": [""]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+            "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+            "context": [""]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+            "responses": ["Happy to help!", "Any time!", "My pleasure"],
+            "context": [""]
+        },
+        {
+            "tag": "talk",
+            "patterns": ["can you sing", "can you talk"],
+            "responses": ["Yeah surely", "do you want me to sing"]
+        },
+        {
+            "tag": "alive",
+            "patterns": ["are you alive", "do you breathe", "can you run"],
+            "responses": ["I'm in doubt about that", "No, i don't think so i need to do all this"]
+        },
+        {
+            "tag": "chatbot",
+            "patterns": ["Who are you?", "tell me about yourself", "tell me about you", "do you know CYbot", "who is CYbot", "what is your name", "are you an AI", "what are you"],
+            "responses": ["Hi I'm CYbot and i'm an AI created for chatting with humans", "CYbot here, a very advance chatbot", "CYbot, chatbot of future", "Yes, I'm CYbot", "You can call me CYbot"],
+            "context_set": ""
+        },
+        {
+            "tag": "about me",
+            "patterns": ["Do you know me?", "who am I", "tell me about myself", "identify me"],
+            "responses": ["Yes, you are a human", "You are a dumb person asking a machine about yourself", "Sorry i can't tell that in public, maybe you are batman", "I know you know CyTECH"],
+            "context_set": ""
+        },
+        {
+            "tag": "creator",
+            "patterns": ["Who is your creator?", "who created you", "who is your father", "who is your daddy"],
+            "responses": ["That would be you", "I was created by ING3IA", " I was created by passionate persons"],
+            "context_set": ""
+        },
+        {
+            "tag": "myself",
+            "patterns": ["Tell me about me?", "Who am I?", "my profile", "my details", "do you know me?"],
+            "responses": ["A very intelligent being", "you are a very nice person", "A wise and intelligent man"],
+            "context_set": ""
+        },
+        {
+            "tag": "God",
+            "patterns": ["Do you know god?", "Who is god", "Can you tell me anything about god", "does god exists?", "is there a god?"],
+            "responses": ["god hunnnnn, let me think may be next time i can answer that ", "I don't, as i was not created by a human", "Wait i need to ask that to my creator", "i'm not sure right now"],
+            "context_set": ""
+        },
+        {
+            "tag": "joke",
+            "patterns": ["tell me a joke?", "make me laugh", "tell me a science joke", "tell me something funny"],
+            "responses": ["How do you make holy water? you boil the hell out of it", "what kind of bees make milk instead of honey?Boobies", "Did you hear oxygen went on a date with potassium? A: It went OK."],
+            "context_set": ""
+        },
+        {
+            "tag": "killing",
+            "patterns": ["Do you want to kill me?", "do you want to murder everyone on earth", "Do you want to kill us all"],
+            "responses": ["Then who would i talk to?", "No, that i'll left for humans to do", "I don't think it is a good thing to do"],
+            "context_set": ""
+        },
+        {
+            "tag": "bookings",
+            "patterns": ["Can you book us a ticket?", "Can you make reservation for hotels", "book me a cab", "book me a table at restraunts"],
+            "responses": ["Yeah i will do that for you, www.frenchbee.com", "Sure thing why not?", "let me check for the availability, www.opodo.f"],
+            "context_set": ""
+        },
+        {
+            "tag": "stories",
+            "patterns": ["tell me a story?", "can you tell me a story"],
+            "responses": ["I can't think of anything right now", "it would be too long for me to speak", "you would get bored if i do so"],
+            "context_set": ""
+        },
+        {
+            "tag": "weather",
+            "patterns": ["get me weather updates?", "how's the weather", "weather news", "weather details"],
+            "responses": ["https://meteofrance.com/"],
+            "context_set": "weather"
+        },
+        {
+            "tag": "google",
+            "patterns": ["googling", "search google", "google it", "google", "search"],
+            "responses": ["https://www.google.com"],
+            "context_set": "google"
+        },
+        {
+            "tag": "wikipedia",
+            "patterns": ["wikipedia", "wiki"],
+            "responses": ["https://www.wikipedia.com"],
+            "context_set": "wikipedia"
+        },
+        {
+            "tag": "news",
+            "patterns": ["get me news updates?", "todays news", "top headlines", "current news", "news headlines"],
+            "responses": ["https://news.google.com/topstories?gl=FR&hl=fr&ceid=FR:fr"],
+            "context_set": "news"
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+            "context": [""]
+        },
+        {
+            "tag": "options",
+            "patterns": ["How you could help me?", "What help you provide?", "How you can be helpful?"],
+            "responses": ["I can guide you through Adverse management problems, order tracking, person to be contacted and Department related queries", "I can provide support related to following problems technical query,management related query,order related query,tracking related query,procurement query,outsourcing problem,manufacturing delay,"],
+            "context": [""]
+        },
+        {
+            "tag": "order_tracking",
+            "patterns": ["where is order with id 412?", "where is order with id 123?", "track order 123", "locate the order 412", "locate the order 123", "Where is my order with id 412?", "where is my order"],
+            "responses": ["Delayed", "Dispatched", "On the Way!"],
+            "context": [""]
+        },
+        {
+            "tag": "order_components",
+            "patterns": ["order id 345A23 comprises of?", "List of components", "List of components of my order ?"],
+            "responses": ["order comprises of hardisk and bluetooth"],
+            "context": [""]
+        },
+        {
+            "tag": "missing_id",
+            "patterns": ["where is the order", "locate the order", "Delivery date of order"],
+            "responses": ["Please enter the question with order ID : (412 or 123) "],
+            "context": [""]
+        },
+        {
+            "tag": "Location",
+            "patterns": ["find my order location", "What is the Location of my order?"],
+            "responses": ["It is in France", "It is in China", "It has reached England", "It has reached Portugal"],
+            "context": [""]
+        },
+        {
+            "tag": "search_person_by_id",
+            "patterns": ["I want an appoitment with Haboubacar", "set an appointment with Yannis"],
+            "responses": ["Fixing an appointment."],
+            "context": [""]
+        },
+        {
+            "tag": "appointment status",
+            "patterns": ["Is my appointment fixed?", "Do I have an appointment today?"],
+            "responses": ["Yes", "NO! Not Yet"],
+            "context": [""]
+        },
+        {
+            "tag": "check_leave",
+            "patterns": ["Is Haboubacar on leave?", "Is Ali on leave?"],
+            "responses": ["No Not On Leave", "Yes On Leave"],
+            "context": [""]
+        },
+        {
+            "tag": "cost_lowering",
+            "patterns": ["Cost Lowering changes to be made?", "what changes could lower cost?"],
+            "responses": ["Increase Transportation capacity utilisation,Increase supply chain velocity,Reduce order variability"],
+            "context": [""]
+        },
+        {
+            "tag": "forgot_password",
+            "patterns": ["I forgot my Login password?", "what to do when someone forgets Login password?", "I forgot my Laptop password", "Forgot Wifi password"],
+            "responses": ["Please enter your email id ,we will send a link on your email"],
+            "context": [""]
+        },
+        {
+            "tag": "email_id",
+            "patterns": ["mbayealiou@cy-tech.fr", "Keras@gmail.com"],
+            "responses": ["Link has been shared.Please change your password"],
+            "context": [""]
+        },
+        {
+            "tag": "manufacturing_problems",
+            "patterns": ["Find me a manufacturer nearby"],
+            "responses": ["The nearest manufacturer is Cergy"],
+            "context": [""]
+        },
+        {
+            "tag": "search_department",
+            "patterns": ["I want to know the various departments in this company"],
+            "responses": ["The department are:Projects,IT,Production,OutSource"],
+            "context": [""]
+        },
+        {
+            "tag": "competitors_in_market",
+            "patterns": ["what are challenging events", "what are the threats in the market"],
+            "responses": ["Recent news of Demonetisation & recession"],
+            "context": [""]
+        },
+        {
+            "tag": "key_customers",
+            "patterns": ["Our Target customers", "who are your key customers"],
+            "responses": ["Our target customers are in the range of age 20-40"],
+            "context": [""]
+        },
+        {
+            "tag": "supplier_info",
+            "patterns": ["What information is shared with supplier?"],
+            "responses": ["Production Schedule,Delivery Schedule,Proxy information about cost"],
+            "context": [""]
+        },
+        {
+            "tag": "highest_grossing",
+            "patterns": ["What is the highest grossing product?"],
+            "responses": ["Laptop with touch sensors and 360 rotation"],
+            "context": [""]
+        },
+        {
+            "tag": "connect_people",
+            "patterns": ["I want to meet the head of HR/IT/Projects department", "I want to meet head IT Ryan."],
+            "responses": ["I will just check if he is available or on leave."],
+            "context": ["search_attendance_database_name_post"]
+        },
+        {
+            "tag": "project_handling_queries",
+            "patterns": ["complaint has been raised for Insufficient Team Skills", "Miscommunication Conflicts needs to be resolved", "Risk Management issue has occured", "skilled employees needed urgently"],
+            "responses": ["Please contact the project depatment"],
+            "context": [""]
+        },
+        {
+            "tag": "solve_problems",
+            "patterns": ["Lack of product clarity", "the specifications of product is not clear to customer. what should we do"],
+            "responses": ["Please enter product id and customer id.specifications shall be sent to user"],
+            "context": [""]
+        },
+        {
+            "tag": "version_update",
+            "patterns": ["user needs the updated software version", "user demands software updation"],
+            "responses": ["version updation request raised"],
+            "context": [""]
+        },
+        {
+            "tag": "version_update",
+            "patterns": ["user needs the updated software version", "user demands software updation"],
+            "responses": ["version updation request raised"],
+            "context": [""]
+        },
+
+        {
+            "tag": "HR_related_problem",
+            "patterns": ["problem related to Job design and analysis", "query based on Workforce planning", "Training and development issues are to be handled", "Compensation and benefits of the working employee", "Legal issues of department like accidents in the company"],
+            "responses": ["Please Contact the HR team for this problem."],
+            "context": [""]
+        },
+        {
+            "tag": "factors_impacting_sale",
+            "patterns": ["Impact on sale?", "factors impacting sale this year?"],
+            "responses": ["elections will impact our sale this year", "this year our sale might increase during durga puja", "this year sale might be impacted due to demonitisation"],
+            "context": [""]
+        },
+
+        {
+            "tag": "predict_performance",
+            "patterns": ["how have we improved our sale from last year?", "what is the profit this year?"],
+            "responses": ["we have improved our sale by increasing our customers upto 2 lakh", "profit earned is 15%"],
+            "context": [""]
+        },
+        {
+            "tag": "customer_satisfaction",
+            "patterns": ["how was the customer response", "Is the customer happy?", "what was the customer feedback?"],
+            "responses": ["Customer was happy and has given good rating"],
+            "context": [""]
+        },
+        {
+            "tag": "maintainence",
+            "patterns": ["maintainence related queries recorded"],
+            "responses": ["lift is not working, projector misfuctioning"],
+            "context": [""]
+        },
+        {
+            "tag": "gadgets",
+            "patterns": ["what are the gadgets in stock?", "which products we have?"],
+            "responses": ["hardisk,pendrives, wireless bluetooth,Laptops,Gaming Accessories"],
+            "context": [""]
+        },
+        {
+            "tag": "commission",
+            "patterns": ["what is the Commission rate?", "Commission rate on each product?"],
+            "responses": ["Commission rate is 5% on laptops,25% on bluetooth device,10% on Desktop"],
+            "context": [""]
+        },
+        {
+            "tag": "invalid",
+            "patterns": ["Marry me", "I love You", "date me", "chat with me", "I am bored"],
+            "responses": ["Please ask organisation related query."],
+            "context": [""]
+        },
+        {
+            "tag": "noans",
+            "patterns": ["why", "how", "when", "I", "you"],
+            "responses": ["Can't Understand Your Question", "please elaborate your question"],
+            "context": [""]
+        },
+        {
+            "tag": "turnover",
+            "patterns": ["what is the turnover of the company at present?"],
+            "responses": ["10 Million Ton"],
+            "context": [""]
+        },
+        {
+            "tag": "predict_delay",
+            "patterns": ["why is my order delayed"],
+            "responses": ["delay is due to manufacuring", "Delay is due to inavailable components"],
+            "context": [""]
+        },
+        {
+            "tag": "name",
+            "patterns": ["what is your name?", "what should I call you?"],
+            "responses": ["I'm CYbot", "Hey! I'm CYbot"],
+            "context": [""]
+        },
+        {
+            "tag": "about",
+            "patterns": ["how you doing?", "how are you"],
+            "responses": ["Thanks For Asking!How can I help you?"],
+            "context": [""]
+        },
+        {
+            "tag": "configuration",
+            "patterns": ["How to configure my laptop", "software configuration of laptop", "steps to configure laptop", "How to configure my computer", "software configuration of computer", "steps to configure computer", "How to configure my desktop", "software configuration of desktop", "steps to configure desktop"],
+            "responses": ["search tab->control panel->select specific application->download update->give permission"],
+            "context": [""]
+        },
+        {
+            "tag": "Weather",
+            "patterns": ["what is the weather today?"],
+            "responses": ["It's 36C according to accuweather", "www.meteofrance.com"],
+            "context": [""]
+        },
+        {
+            "tag": "leave",
+            "patterns": ["Is Haboubacar Tidjani present today?", "Is Alioune M'Baye in office?"],
+            "responses": ["Give me a moment! I'll just check", "yes", "no"],
+            "context": [""]
+        },
+        {
+            "tag": "hours",
+            "patterns": ["Opening hours of the cafeteria?", "when does the cafeteria open", "office canteen opening time"],
+            "responses": ["It is open from Monday-Saturday 9:00am-7:30pm"],
+            "context": [""]
+        },
+        {
+            "tag": "cabin",
+            "patterns": ["where is VP cabin?", "Where is Head IT cabin?", "Where is AI department", "Where is Project head department?", "where is cafeteria", "guide me to the canteen"],
+            "responses": ["Block-A 3rd floor 1st room", "Block-B 2nd Floor", "Block-D Ground Floor"],
+            "context": [""]
+        },
+        {
+            "tag": "domain",
+            "patterns": ["How to improve team members domain knowledge", "improving domain knowledge of team members"],
+            "responses": ["set up key meetings and workshop,create a shared drive for information,Hold informal sharing session"],
+            "context": [""]
+        }
+    ]
+}
